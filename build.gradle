@@ -12,11 +12,22 @@ plugins {
     id 'org.springframework.boot' version '2.1.1.RELEASE'
 }
 
+apply plugin: 'io.spring.dependency-management'
+
+// bootJar {
+//     baseName = 'gs-spring-boot'
+//     version =  '0.1.0'
+// }
+
 repositories {
     jcenter()
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.1'
 }
@@ -31,4 +42,4 @@ test {
     }
 }
 
-mainClassName = 'thing.App'
+mainClassName = 'hello.Application'
