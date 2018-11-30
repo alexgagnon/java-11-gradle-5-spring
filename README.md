@@ -5,4 +5,5 @@
 - Java 11
 - Gradle 5
 - JUnit 5
-- Spring
+- Spring Boot 2
+- Spring Framework 5
