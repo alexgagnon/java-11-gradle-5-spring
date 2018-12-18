@@ -7,17 +7,7 @@
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
       "stopOnEntry": false,
-      "mainClass": "java.App",
-      "args": ""
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - Main",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "console": "internalConsole",
-      "stopOnEntry": false,
-      "mainClass": "Main",
+      "mainClass": "hello.Application",
       "args": ""
     }
   ]
